@@ -167,7 +167,9 @@ return [
      * Package Service Providers...
      */
     Laravel\Tinker\TinkerServiceProvider::class,
-    Laravel\Socialite\SocialiteServiceProvider::class,
+    //Laravel\Socialite\SocialiteServiceProvider::class,
+    \SocialiteProviders\Manager\ServiceProvider::class,
+    Barryvdh\LaravelIdeHelper\IdeHelperServiceProvider::class,
 
     /*
      * Application Service Providers...
@@ -178,7 +180,6 @@ return [
     App\Providers\EventServiceProvider::class,
     App\Providers\RouteServiceProvider::class,
 
-    Barryvdh\LaravelIdeHelper\IdeHelperServiceProvider::class,
 
   ],
 
